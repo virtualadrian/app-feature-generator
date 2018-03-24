@@ -12,18 +12,20 @@ def writeResult(filePath, result):
     fh.write(result)
     fh.close()
 
-def main():
-    context = {
-        'package': 'com.loyalty',
-        'feature': 'location',
-        'featureName': 'Location',
-        'tableName': 'location'
-    }
-
+def generateFeature(context):
     writeResult('./result/' + context['featureName'] + 'Controller.java', render('template/Controller.java.tpl', context))
     writeResult('./result/' + context['featureName'] + 'Entity.java', render('template/Entity.java.tpl', context))
     writeResult('./result/' + context['featureName'] + 'Model.java', render('template/Model.java.tpl', context))
     writeResult('./result/' + context['featureName'] + 'Repository.java', render('template/Repository.java.tpl', context))
     writeResult('./result/' + context['featureName'] + 'Service.java', render('template/Service.java.tpl', context))
+
+def main():
+    context = {
+        'package': 'com.loyalty',
+        'feature': 'promotionLocation',
+        'featureName': 'PromotionLocation',
+        'tableName': 'promotion_location'
+    }
+    generateFeature(context)
 
 main()
