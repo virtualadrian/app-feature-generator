@@ -22,9 +22,9 @@ def generateFeature(context):
 def main():
     context = {
         'package': 'com.loyalty',
-        'feature': 'promotionLocation',
-        'featureName': 'PromotionLocation',
-        'tableName': 'promotion_location'
+        'feature': 'memberPromotion',
+        'featureName': 'MemberPromotion',
+        'tableName': 'member_promotion'
     }
     generateFeature(context)
 
