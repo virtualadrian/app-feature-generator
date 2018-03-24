@@ -1,6 +1,6 @@
 package {{package}}.services.{{feature}};
 
-import {{package}}.base.BaseController;
+import {{package}}.base.BaseCrudService;
 import org.springframework.stereotype.Service;
 
 @Service

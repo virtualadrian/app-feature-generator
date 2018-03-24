@@ -1,6 +1,6 @@
 package {{package}}.services.{{feature}};
 
-import {{package}}.base.BaseController;
+import {{package}}.base.BaseEntity;
 import lombok.Data;
 
 import javax.persistence.Column;
